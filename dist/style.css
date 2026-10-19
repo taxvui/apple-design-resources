@@ -106,3 +106,5 @@ body[data-color-scheme="dark"] .footer-legal a{color:inherit}
 body[data-color-scheme="dark"] .theme-switch span{color:#a1a1a6}
 body[data-color-scheme="dark"] .theme-switch input:checked+span{background:#424245;color:#fff}
 body[data-color-scheme="dark"] hr{border-color:#424245}
+
+.footer-home svg{display:block;width:14px;height:18px}.footer-breadcrumb .footer-home{display:inline-flex;color:#424245}body[data-color-scheme="dark"] .footer-breadcrumb a{color:inherit}
