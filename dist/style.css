@@ -5,3 +5,57 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .row{display:flex;flex-wrap:wrap;align-items:center}.large-offset-1{margin-left:8.333%}@media(max-width:734px){.small-offset-0{margin-left:0}.small-8{width:100%;margin-top:28px}.row>.small-12{width:100%}}
 .language-control{display:inline-flex;align-items:center;gap:5px;flex-shrink:0;color:#424245}.language-control select{font:inherit;color:inherit;border:0;background:transparent;padding:5px 2px;cursor:pointer;max-width:108px}.local-inner>div{align-items:center}html[lang="vi"] .global-links{gap:16px}html[lang="vi"] .typography-hero-headline{letter-spacing:-1.5px;line-height:1.2}html[lang="vi"] .chapternav-items{gap:18px}@media(max-width:734px){.local-inner{width:91%;gap:12px}.local-inner>div{gap:12px}.local-inner>div>a:first-child{display:none}.language-control select{font-size:12px;max-width:95px}html[lang="vi"] .typography-hero-headline{font-size:36px}html[lang="vi"] .global-links{gap:20px}}
+
+/* Keep each layout within its own available width, including narrow Safari views. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+:root{--color-figure-blue:#0066cc}
+.section-content,.local-inner,.footer-inner{min-width:0}
+.grid-item,.download-content,.search-panel form>div{min-width:0}
+.download-text-description{width:auto!important;max-width:calc(100% - 25px);overflow-wrap:anywhere}
+.download-grid{grid-template-columns:48px minmax(0,1fr)}
+.download-image{height:auto;aspect-ratio:auto}
+.search-panel input{min-width:0}
+.global-header{position:relative;z-index:40}
+@media(max-width:1068px) and (min-width:735px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+  .grid>.grid-item{grid-column:auto}
+}
+@media(max-width:734px){
+  .section-content,.footer-inner{width:auto;max-width:none;margin-inline:24px}
+  .section-content{padding-block:44px!important}
+  .section-header .section-content{padding-top:40px!important;padding-bottom:24px!important}
+  .grid{grid-template-columns:minmax(0,1fr);column-gap:0;row-gap:36px}
+  .grid>.grid-item{grid-column:1 / -1;width:100%;max-width:100%}
+  .section-header .column{width:100%;max-width:100%}
+  .chapternav{min-width:0;max-width:calc(100% + 48px);margin-inline:-24px}
+  .chapternav-items{width:100%;max-width:100%;padding-inline:24px;gap:24px!important;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  .chapternav-link{min-width:64px;padding-block:4px 12px}
+  .local-inner{width:auto;margin-inline:20px;gap:8px;flex-wrap:wrap}
+  .local-inner>div{min-width:0;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+  .local-inner>div>a{display:none!important}
+  .local-title{font-size:19px;flex-shrink:0;padding-block:12px}
+  .language-control{min-height:44px}
+  .language-control select{min-height:44px;max-width:114px;font-size:14px}
+  .global-nav{padding-inline:16px;gap:8px}
+  .global-nav .brand{min-width:0;font-size:17px}
+  .search-button,.menu-button{min-width:44px;min-height:44px;align-items:center;justify-content:center;flex-shrink:0}
+  .global-links{max-height:calc(100dvh - 48px);overflow-y:auto;padding:24px}
+  .global-links a{white-space:normal;overflow-wrap:anywhere}
+  .typography-hero-headline,html[lang="vi"] .typography-hero-headline{font-size:clamp(30px,8.5vw,38px);line-height:1.17;letter-spacing:-1px;overflow-wrap:break-word}
+  .typography-intro{font-size:19px;line-height:1.5;letter-spacing:0}
+  .typography-section-headline{font-size:30px;line-height:1.2;overflow-wrap:break-word}
+  h4,h5{line-height:1.35;overflow-wrap:break-word}
+  .download-text-link{display:inline-block;max-width:100%;overflow-wrap:anywhere}
+  .row-download{padding-block:2px 14px}
+  .download-grid{column-gap:12px}
+  .download-content a{overflow-wrap:anywhere}
+  .footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .footer-columns>div{min-width:0}
+  .footer-columns>div:last-child{grid-column:1 / -1}
+  .footer-inner{padding-block:24px}
+  .breadcrumb{line-height:2;overflow-wrap:anywhere}
+  .breadcrumb span{padding-inline:6px}
+  .footer-bottom{overflow-wrap:anywhere}
+  .search-panel{padding:24px;max-height:calc(100dvh - 48px);overflow-y:auto}
+  .search-panel input{font-size:16px}
+}
