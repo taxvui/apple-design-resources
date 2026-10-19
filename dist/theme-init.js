@@ -1,0 +1,1 @@
+(()=>{let preference='auto';try{const saved=localStorage.getItem('design-resources-theme');if(['light','dark','auto'].includes(saved))preference=saved;}catch{}const theme=preference==='auto'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):preference;document.documentElement.dataset.colorScheme=theme;document.documentElement.style.colorScheme=theme;})();

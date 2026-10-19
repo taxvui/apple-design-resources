@@ -35,7 +35,37 @@ const server = http.createServer((req,res) => {
             assert.equal(await page.locator('html').getAttribute('lang'),lang==='vi'?'en':'vi');
             await page.locator('#language-select').selectOption(lang);
           }
+          assert.equal(await page.locator('footer #language-select').count(),1);
+          assert.equal(await page.locator('.local-header #language-select').count(),0);
+          assert.equal(await page.locator('.footer-group').count(),8);
+          if([390,1440].includes(width)&&lang==='vi'){
+            if(width===390){
+              const group=page.locator('.footer-group').first();
+              assert.equal(await group.getAttribute('open'),null);
+              await group.locator('summary').click();
+              assert.notEqual(await group.getAttribute('open'),null);
+              await group.locator('summary').click();
+            }
+            await page.locator('input[name="theme"][value="dark"]').check();
+            assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'dark');
+            await page.reload({waitUntil:'networkidle'});
+            assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'dark');
+            await page.locator('footer').scrollIntoViewIfNeeded();
+            await page.screenshot({path:`responsive-screenshots/${name}-${width}-footer-dark.png`});
+            await page.locator('input[name="theme"][value="light"]').check();
+            assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'light');
+            await page.locator('input[name="theme"][value="auto"]').check();
+            await page.emulateMedia({colorScheme:'dark'});
+            assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'dark');
+            await page.emulateMedia({colorScheme:'light'});
+            assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'light');
+            const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
+            assert(overflow<=1,`${name} ${width}: footer/theme overflow`);
+            await page.locator('footer').scrollIntoViewIfNeeded();
+            await page.screenshot({path:`responsive-screenshots/${name}-${width}-footer-light.png`});
+          }
           if(width===390&&lang==='vi'){
+            await page.evaluate(()=>window.scrollTo(0,0));
             await page.screenshot({path:`responsive-screenshots/${name}-390-hero.png`});
             await page.locator('#macos-apps').scrollIntoViewIfNeeded();
             await page.screenshot({path:`responsive-screenshots/${name}-390-macos.png`});
