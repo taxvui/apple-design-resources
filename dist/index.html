@@ -1,0 +1,833 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="A responsive recreation of Apple Design Resources, with UI kits, templates, fonts and design tools."><meta name="theme-color" content="#ffffff"><title>Apple Design Resources — Clone</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="resources.css"></head><body data-color-scheme="light"><a class="skip" href="#main">Skip to content</a><header class="global-header"><nav class="global-nav" aria-label="Global navigation"><a class="brand" href="#" aria-label="Home"><svg width="18" height="22" viewBox="0 0 18 22" fill="currentColor" aria-hidden="true"><path d="M13.3 3.4c.8-1 1.4-2.2 1.2-3.4-1.2.1-2.6.8-3.5 1.8-.7.8-1.4 2.1-1.2 3.3 1.3.1 2.6-.6 3.5-1.7M16.9 16.4c-.5 1.1-.8 1.7-1.5 2.7-.9 1.3-2.1 2.9-3.7 2.9-1.4 0-1.8-.9-3.7-.9-1.8 0-2.3.9-3.7.9-1.5 0-2.7-1.5-3.6-2.8C-1.8 14.6-.5 8 3.4 6c1.4-.7 3-.7 4.4-.1 1.1.4 1.7.4 2.8 0 1.5-.6 3.7-.5 5.1.6.5.4.8.7 1.2 1.2-3.5 2-3 7 .0 8.7"/></svg><span>Developer</span></a><div class="global-links"><a href="https://developer.apple.com/develop/" target="_blank" rel="noopener noreferrer">Get Started</a><a href="https://developer.apple.com/platforms/" target="_blank" rel="noopener noreferrer">Platforms</a><a href="https://developer.apple.com/technologies/" target="_blank" rel="noopener noreferrer">Technologies</a><a href="https://developer.apple.com/community/" target="_blank" rel="noopener noreferrer">Community</a><a href="https://developer.apple.com/documentation/" target="_blank" rel="noopener noreferrer">Documentation</a><a href="https://developer.apple.com/download/" target="_blank" rel="noopener noreferrer">Downloads</a><a href="https://developer.apple.com/support/" target="_blank" rel="noopener noreferrer">Support</a></div><button class="search-button" aria-label="Search resources"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg></button><button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button></nav></header><div class="local-header"><nav class="local-inner" aria-label="Design navigation"><a class="local-title" href="#">Design</a><div><a href="https://developer.apple.com/design/" target="_blank" rel="noopener noreferrer">Overview</a><a href="https://developer.apple.com/design/human-interface-guidelines/" target="_blank" rel="noopener noreferrer">Human Interface Guidelines</a><a href="#" aria-current="page">Resources</a><label class="language-control" data-no-translate><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><select id="language-select" aria-label="Language"><option value="vi" lang="vi">Tiếng Việt</option><option value="en" lang="en">English</option></select></label></div></nav></div><div class="search-panel" hidden><form role="search"><label for="resource-search">Search design resources</label><div><input id="resource-search" type="search" placeholder="Find UI kits, fonts, templates…" autocomplete="off"><button type="button" class="close-search" aria-label="Close search">✕</button></div></form><p class="search-status" aria-live="polite"></p></div><main id="main" class="main" role="main">
+		<header role="presentation" class="section section-header">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-8 large-centered medium-9 small-12 text-center">
+
+						<h1 class="typography-hero-headline">Apple Design Resources</h1>
+						<p class="typography-intro">Design apps accurately and quickly using official Apple design templates, icon production templates, color guides, and&nbsp;more.</p>
+					</div>
+				</div>
+				<nav id="chapternav" class="chapternav">
+					<div class="chapternav-wrapper">
+						<ul class="chapternav-items">
+							<li class="chapternav-item chapternav-item-ios">
+								<a class="chapternav-link" href="#ios-apps">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-ios"></figure>
+									<span class="chapternav-label nowrap">iOS &amp; iPadOS</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-ipados">
+								<a class="chapternav-link" href="#macos-apps">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-macos"></figure>
+									<span class="chapternav-label nowrap">macOS</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-tvos">
+								<a class="chapternav-link" href="#tvos-apps">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-tvos"></figure>
+									<span class="chapternav-label nowrap">tvOS</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-macos">
+								<a class="chapternav-link" href="#watchos-apps">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-watchos"></figure>
+									<span class="chapternav-label nowrap">watchOS</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-visionos">
+								<a class="chapternav-link" href="#visionos-apps">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-visionos"></figure>
+									<span class="chapternav-label nowrap">visionOS</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-program">
+								<a class="chapternav-link" href="#technologies">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-tech"></figure>
+									<span class="chapternav-label nowrap">Technologies</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-app-store">
+								<a class="chapternav-link" href="#fonts">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-fonts"></figure>
+									<span class="chapternav-label nowrap">Fonts</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-watchos">
+								<a class="chapternav-link" href="#tools">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-symbols"></figure>
+									<span class="chapternav-label nowrap">Tools</span>
+								</a>
+							</li>
+							<li class="chapternav-item chapternav-item-program">
+								<a class="chapternav-link" href="#product-bezels">
+									<figure class="chapternav-icon platform-icon chapternav-icon platform-icon-marketing"></figure>
+									<span class="chapternav-label nowrap">Product Bezels</span>
+								</a>
+							</li>
+						</ul>
+						
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="section section-ios section-download bg-light" id="ios-apps">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">iOS and iPadOS</h2>
+
+				<h4 class="margin-top-small">iOS&nbsp;27 and iPadOS&nbsp;27</h4>
+				<div class="grid grid-gutterless">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-UIKit-iOS27_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1651309003795292092/ios-and-ipados-27" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://www.sketch.com/s/04c24d8b-38fb-4afb-8836-36617e022f02" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-App-Icon-Template_2x.png" width="100%" class="download-image" alt="" />
+						<h5>App Icon Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1645923469870515372/app-icon-template-ios-ipados-and-watchos-27" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/a443d962-d989-4c5b-b1db-fb7fb3946995" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/iOS-27-Icon-Templates-Photoshop-Illustrator.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, Illustrator</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-macos section-download" id="macos-apps">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">macOS</h2>
+
+				<h4 class="margin-top-small">macOS 27</h4>
+				<div class="grid grid-gutterless">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-UIKit-macOS27_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1651309434229735362/macos-27" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/57153a31-3379-4737-8ac6-dbfd6525f052" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-tvos section-download bg-light" id="tvos-apps">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">tvOS</h2>
+
+				<h4 class="margin-top-small">tvOS 18</h4>
+				<div class="grid grid-gutterless">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/tvOS14-Sketch-Library-small_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="sketch://add-library?url=https%3A%2F%2Fdeveloper.apple.com%2Fdesign%2Fdownloads%2Fsketch-tvOS.rss" class="download-text-link"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Sketch</b></a>
+								<p class="typography-caption-headline download-text-description">Note: Sketch must be installed to download</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/tvOS18-Design-Templates_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Templates</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/tvOS-18-Design-Templates-Sketch.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/tvOS14-Production-Templates-small_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Production Templates</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/tvOS-18-Production-Templates-Sketch.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Sketch</b></a>
+								<p class="typography-caption-headline download-text-description">427 KB</p>
+							</div>
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/tvOS-18-Production-Templates-Photoshop.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop</b></a>
+								<p class="typography-caption-headline download-text-description">238 KB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-watchos section-download" id="watchos-apps">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">watchOS</h2>
+
+				<h4 class="margin-top-small">watchOS 26</h4>
+				<div class="grid grid-gutterless">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/watchOS8-Sketch-Library-small_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1540060090060216489/watchos-26" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/2b12618d-596c-41fd-8488-132bff9535e7" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-visionos section-download bg-light" id="visionos-apps">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">visionOS</h2>
+
+				<h4 class="margin-top-small">visionOS 26</h4>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-UIKit-visionS26_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1540071341298017505/visionos-26" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/eb13bfe1-2ddb-4f87-b92c-740a36abed7a" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<h4 class="margin-top-small">visionOS 2</h4>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/visionOS-2-Design-Templates_2x.png" width="100%" class="download-image" alt="" />
+						<h5>UI Kit</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="sketch://add-library?url=https%3A%2F%2Fdeveloper.apple.com%2Fdesign%2Fdownloads%2Fsketch-visionOS.rss" class="download-text-link"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Sketch</b></a>
+								<p class="typography-caption-headline download-text-description">Note: Sketch must be installed to download</p>
+							</div>
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1253443272911187215/apple-design-resources-visionos" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/visionOS-Design-Templates-small_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Templates</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/visionOS-2-Design-Templates-Sketch.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-technologies section-download" id="technologies">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">Technologies</h2>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Add-Apple-Watch-Face_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Add Apple&nbsp;Watch Face</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Glyph-Add-Apple-Watch-Face.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG, PDF, SVG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-AirPlay_2x.png" width="100%" class="download-image" alt="" />
+						<h5>AirPlay</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Glyph-AirPlay.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PDF</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/airplay/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>Design Guidelines</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-App-Clips_2x.png" width="100%" class="download-image" alt="" />
+						<h5>App Clips Design&nbsp;Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367914571662801866/app-clips" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/e6ed1af0-508c-4fd5-bc6f-05f7ccb91c6e" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Apple-Health-Icon_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple Health Icon</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Icon-Apple-Health.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/healthkit/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>Design Guidelines</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Apple-Pay_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple Pay Design&nbsp;Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367915141082663884/apple-pay" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/b0fa95e1-e12d-4694-895f-a70f39b8f313" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-ARKit-Badge-and-Glyph_2x.png" width="100%" class="download-image" alt="" />
+						<h5>ARKit Badge and&nbsp;Glyph</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Glyph-ARKit.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PDF</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/augmented-reality/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>Design Guidelines</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Camera-Control_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Camera Control</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://sketch.com/s/85a0f9d2-d76c-42f9-b681-6225882d8024" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Games-and-Game-Center_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Games and Game Center</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Icon-Game-Center.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG, PDF</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-HomeKit-Icon-and-Glyph_2x.png" width="100%" class="download-image" alt="" />
+						<h5>HomeKit Icon and&nbsp;Glyph</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Icon-HomeKit.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG, PDF</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/homekit/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>Design Guidelines</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Live-Activities_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Live Activities Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367915437752334285/live-activities" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/d1e8992f-14c2-4eef-b29d-24a32c0c0ef9" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Message-Template_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Messages Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367916269438172112/imessage-apps-and-stickers" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/d6cd3d23-7aec-43d5-acb9-52f720ff48b7" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-SIWA-Logo_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Sign in with Apple Logo</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Logo-Sign-in-with-Apple.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG, PDF, SVG</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>Design Guidelines</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-SIWA-Buttons_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Sign in with Apple Buttons</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367916685468040146/sign-in-with-apple" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/7cd7dbf4-41b2-4e90-bb00-2796ced3cf2b" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Siri-and-App-Shortcuts_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Siri and App Shortcuts Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367916969551216595/siri-app-shortcuts" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/84ba051b-c6ad-48c5-8106-28185947754a" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Siri-Icons_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Siri Icons</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Icon-Siri.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Tap-to-Pay_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Tap to Pay on iPhone Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367917199004804052/tap-to-pay-on-iphone" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/fbd2fa90-fadd-403a-b319-0f4d7c04ae5f" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-TipKit_2x.png" width="100%" class="download-image" alt="" />
+						<h5>TipKit Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367917705471226837/tipkit" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/b99f22e1-235e-481b-9ccd-aa7d8f31fedc" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Tech-Wallet_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Wallet Template</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://www.figma.com/community/file/1367917956770293718/wallet" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Figma</b></a>
+							</div>
+							<div class="row-download">
+								<a href="https://sketch.com/s/dd2ce40a-097e-486b-9053-b60088e1d6c3" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-external icon-blue"></span><b>Sketch</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-technologies section-download bg-light" id="fonts">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">Fonts</h2>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Pro_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Pro</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Pro</b></a>
+								<p class="typography-caption-headline download-text-description">System font for iOS, iPadOS, macOS and tvOS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Compact_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Compact</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Compact</b></a>
+								<p class="typography-caption-headline download-text-description">System font for watchOS, optimized for small sizes and narrow columns.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Mono_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Mono</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Mono</b></a>
+								<p class="typography-caption-headline download-text-description">Used in Xcode, enables alignment between rows and columns of text.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-NY_2x.png" width="100%" class="download-image" alt="" />
+						<h5>New York</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/NY.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download New York</b></a>
+								<p class="typography-caption-headline download-text-description">Performs as a traditional reading face at small sizes and a graphic display face at larger sizes.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Arabic_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Arabic</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Arabic.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Arabic</b></a>
+								<p class="typography-caption-headline download-text-description">Arabic system font on Apple platforms.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Armenian_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Armenian</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Armenian.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Armenian</b></a>
+								<p class="typography-caption-headline download-text-description">Designed with proportions that have been adjusted for a better visual balance in multilingual typesetting.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Georgian_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Georgian</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Georgian.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Georgian</b></a>
+								<p class="typography-caption-headline download-text-description">Supports modern Georgian, Mkhedruli, and Mtavruli uppercase forms.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Font-SF-Hebrew_2x.png" width="100%" class="download-image" alt="" />
+						<h5>SF Hebrew</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Hebrew.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download SF Hebrew</b></a>
+								<p class="typography-caption-headline download-text-description">With full support of the Niqqud diacritical marks.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-sf-symbols section-download" id="tools">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">SF Symbols</h2>
+				<p class="large-10 medium-12">SF Symbols is a library of over 7,000 symbols designed to integrate seamlessly with San Francisco, the system font for Apple platforms. Symbols come in nine weights and three scales, automatically align with text, and can be exported and edited using vector graphics tools to create custom symbols with shared design characteristics and accessibility features. Symbols feature multi-layer drawings designed for motion, enabling a range of expressive animations. Crafted for a global audience, symbols automatically adapt to a user&rsquo;s reading direction and feature localized designs for over 20 international&nbsp;scripts.</p>
+				<p><a href="https://developer.apple.com/sf-symbols/" class="more" target="_blank" rel="noopener noreferrer">Learn more</a></p>
+				<div class="grid grid-gutterless align-items-center margin-top">
+					<div class="grid-item large-span-5 medium-span-6 small-span-12 download-column-text">
+						<div class="download-grid">
+							<div class="download-icon">
+								<img class="image-file" src="assets/sf-symbols-7-48x48_2x.png" width="48" height="48" alt="" />
+							</div>
+							<div class="download-content">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-27.dmg?2" target="_blank" rel="noopener noreferrer"><span class="icon icon-after icon-arrowdowncircle">Download SF&nbsp;Symbols 27</span></a>
+								<p class="typography-caption">Requires macOS&nbsp;Sonoma or later.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-7 medium-span-6 small-span-12 download-column">
+						<picture class="theme-light-image">
+							<img src="assets/sf-symbols-7-light_2x.png" width="100%" alt="">
+						</picture>
+						<picture class="theme-dark-image">
+							<img src="assets/sf-symbols-7-dark_2x.png" width="100%" alt="">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-sf-symbols section-download bg-light">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">Icon Composer</h2>
+				<p class="large-10 medium-12">Icon Composer lets you create layered icons out of Liquid&nbsp;Glass from a single design for iPhone, iPad, Mac, and Apple&nbsp;Watch. A multi-layer icon format allows you to craft your icon and annotate it across appearance modes. Icon&nbsp;Composer is designed to work seamlessly with Xcode and provides the option to export a flattened version of your icon for marketing and communication&nbsp;needs.</p>
+				<p><a href="https://developer.apple.com/icon-composer/" class="more" target="_blank" rel="noopener noreferrer">Learn more</a></p>
+				<div class="grid grid-gutterless align-items-center margin-top">
+					<div class="grid-item large-span-5 medium-span-6 small-span-12 download-column-text">
+						<div class="download-grid">
+							<div class="download-icon">
+								<img class="image-file" src="assets/icon-composer-48x48_2x.png" width="48" height="48" alt="" />
+							</div>
+							<div class="download-content">
+								<a href="https://developer.apple.com/download/all/?q=Icon%20Composer" target="_blank" rel="noopener noreferrer"><span class="icon icon-after icon-arrowdowncircle">Download Icon Composer</span></a>
+								<p class="typography-caption">Requires macOS&nbsp;Sequoia or later.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-7 medium-span-6 small-span-12 download-column">
+						<picture class="theme-light-image">
+							<source srcset="assets/poster-annotate-1_2x.webp" type="image/webp" />
+							<img src="assets/poster-annotate-1_2x.png" width="100%" alt="">
+						</picture>
+						<picture class="theme-dark-image">
+							<source srcset="assets/poster-annotate-2_2x.webp" type="image/webp" />
+							<img src="assets/poster-annotate-2_2x.png" width="100%" alt="">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-technologies section-download" id="parallax-previewer">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">Parallax image tools</h2>
+				<p class="large-10 medium-12">Use Parallax Previewer to deliver parallax visual effects that transform static images into dynamic and immersive experiences on tvOS and&nbsp;visionOS.</p>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/tvOS-Parallax-Previewer-App-small_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Parallax Previewer App</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://itunespartner.apple.com/assets/downloads/Parallax%20Previewer.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download version&nbsp;2 for macOS</b></a>
+								<p class="typography-caption-headline download-text-description">Requires macOS 13.5 or later.</p>
+							</div>
+							<div class="row-download">
+								<a href="https://itunespartner.apple.com/assets/downloads/Parallax%20Previewer_1_0.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Download version&nbsp;1 for macOS</b></a>
+								<p class="typography-caption-headline download-text-description">Requires macOS 10.10.5 or later.</p>
+							</div>
+							<div class="row-download">
+								<a href="https://help.apple.com/itc/parallaxpreviewer/" class="download-text-link list-icon-document" target="_blank" rel="noopener noreferrer"><b>User Guide</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-technologies section-download bg-light" id="product-bezels">
+			<div class="section-content">
+
+				<h2 class="typography-section-headline">Product Bezels</h2>
+				<p class="large-10 medium-12">When using product bezels in your marketing materials, be sure to review these <a href="https://developer.apple.com/app-store/marketing/guidelines/#section-products" target="_blank" rel="noopener noreferrer">Marketing Resources and Identity Guidelines</a>.</p>
+				<div class="grid grid-gutterless margin-top-small">
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-AppleTV_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple TV</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-Apple-TV.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-AW-Ultra3_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple Watch Ultra 3 (2025)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-Apple-Watch-Ultra-3-2025.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-AW-Ultra2_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple Watch Ultra 2 (2024)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-Apple-Watch-Ultra-2-2024.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-AW-Series11_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Apple Watch Series&nbsp;11</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-Apple-Watch-Series-11-2025.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-Studio-Displays_2x.png" width="100%" class="download-image" alt="" />
+						<h5>Studio Displays</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-Studio-Displays.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iMac_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iMac</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iMac-M4.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPad_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPad (A16)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPad-(A16).dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPad-Air_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPad Air (M4)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPad-Air-(M4).dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPad-mini_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPad mini (A17 Pro)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPad-mini-(A17-Pro).dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPad-Pro_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPad Pro (M5)</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPad-Pro-(M5).dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPhoneDuo_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPhone Duo</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-Duo.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPhone18_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPhone 18</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-18.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPhone17_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPhone 17</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-17.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-iPhone16_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPhone 16</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-iPhone-16.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-MacBook-Air-M5_2x.png" width="100%" class="download-image" alt="" />
+						<h5>MacBook Air M5</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-MacBook-Air-M5.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-MacBook-Pro-M5_2x.png" width="100%" class="download-image" alt="" />
+						<h5>MacBook Pro M5</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-MacBook-Pro-M5.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-MacBook-Neo_2x.png" width="100%" class="download-image" alt="" />
+						<h5>MacBook Neo</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Bezel-MacBook-Neo.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Photoshop, PNG</b></a>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item large-span-4 medium-span-6 small-span-12">
+						<img src="assets/Thumbnail-Bezel-Keynote_2x.png" width="100%" class="download-image" alt="" />
+						<h5>iPhone and iPad for Keynote Live&nbsp;Video</h5>
+						<div class="download-container">
+							<div class="row-download">
+								<a href="https://devimages-cdn.apple.com/design/resources/download/Keynote-Live-Video-Product-Bezel.dmg" class="download-text-link" target="_blank" rel="noopener noreferrer"><span class="icon icon-before icon-arrowdowncircle icon-blue"></span><b>Keynote</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section bg-alt">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-6 small-12">
+
+						<h2 class="typography-section-headline">Badges and Logos</h2>
+						<p>Find badges and logos for Apple technologies, such as Apple&nbsp;Health, Apple&nbsp;Wallet, Apple&nbsp;Music, and Apple&nbsp;Pay, that can be used in your app’s marketing material.</p>
+						<a href="https://developer.apple.com/licensing-trademarks/" class="more" target="_blank" rel="noopener noreferrer">View Apple Badges and&nbsp;Logos</a>
+					</div>
+					<div class="column large-5 small-8 large-offset-1 small-offset-0">
+						<picture>
+							<img src="assets/Marketing-Imagery-Badges_2x.png" width="100%" style="border-radius: 10px" alt="" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main><footer><div class="footer-inner"><p class="breadcrumb"> Developer <span>›</span> Design <span>›</span> Resources</p><div class="footer-columns"><div><h3>Platforms</h3><a href="#ios-apps">iOS & iPadOS</a><a href="#macos-apps">macOS</a><a href="#watchos-apps">watchOS</a><a href="#visionos-apps">visionOS</a></div><div><h3>Design</h3><a href="#technologies">Technologies</a><a href="#fonts">Fonts</a><a href="#tools">Tools</a><a href="#product-bezels">Product Bezels</a></div><div><h3>Developer Resources</h3><a href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a><a href="https://developer.apple.com/documentation/">Documentation</a><a href="https://developer.apple.com/support/">Support</a></div></div><div class="footer-bottom"><span>Independent interface recreation for demonstration. Resources belong to Apple.</span><a href="https://developer.apple.com/design/resources/">View original ↗</a></div></div></footer><button class="back-top" aria-label="Back to top" hidden>↑</button><script src="app.js"></script><script src="i18n.js"></script></body></html>
