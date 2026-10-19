@@ -56,8 +56,10 @@ const server = http.createServer((req,res) => {
             assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'light');
             await page.locator('input[name="theme"][value="auto"]').check();
             await page.emulateMedia({colorScheme:'dark'});
+            await page.locator('body[data-color-scheme="dark"]').waitFor();
             assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'dark');
             await page.emulateMedia({colorScheme:'light'});
+            await page.locator('body[data-color-scheme="light"]').waitFor();
             assert.equal(await page.locator('body').getAttribute('data-color-scheme'),'light');
             const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth);
             assert(overflow<=1,`${name} ${width}: footer/theme overflow`);
